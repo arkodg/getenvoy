@@ -1,21 +1,20 @@
 module github.com/tetratelabs/getenvoy
 
-// This project uses go:embed, so requires minimally go 1.16
 go 1.16
 
 require (
-	github.com/StackExchange/wmi v0.0.0-20210224194228-fe8f1750fd46 // indirect
-	github.com/go-ole/go-ole v1.2.5 // indirect
-	github.com/mattn/go-runewidth v0.0.12 // indirect
+	github.com/containerd/containerd v1.5.1 // indirect
+	github.com/docker/docker v20.10.6+incompatible
+	github.com/docker/go-connections v0.4.0 // indirect
+	github.com/gorilla/mux v1.8.0 // indirect
 	github.com/mholt/archiver/v3 v3.5.0
-	github.com/russross/blackfriday/v2 v2.1.0 // indirect
-	github.com/schollz/progressbar/v3 v3.8.0
+	github.com/moby/term v0.0.0-20201216013528-df9cb8a40635 // indirect
+	github.com/morikuni/aec v1.0.0 // indirect
+	github.com/pkg/errors v0.9.1
+	github.com/schollz/progressbar/v3 v3.8.1
 	github.com/shirou/gopsutil/v3 v3.21.4
+	github.com/sirupsen/logrus v1.8.1
 	github.com/spf13/cobra v1.1.3
 	github.com/stretchr/testify v1.7.0
-	github.com/tklauser/go-sysconf v0.3.5 // indirect
 	github.com/ulikunitz/xz v0.5.10
-	golang.org/x/crypto v0.0.0-20210506145944-38f3c27a63bf // indirect
-	golang.org/x/sys v0.0.0-20210510120138-977fb7262007 // indirect
-	golang.org/x/term v0.0.0-20210503060354-a79de5458b56 // indirect
 )

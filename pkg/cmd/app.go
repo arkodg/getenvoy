@@ -22,6 +22,7 @@ import (
 
 	"github.com/spf13/cobra"
 
+	"github.com/tetratelabs/getenvoy/pkg/cmd/apiserver"
 	"github.com/tetratelabs/getenvoy/pkg/globals"
 	"github.com/tetratelabs/getenvoy/pkg/manifest"
 	"github.com/tetratelabs/getenvoy/pkg/version"
@@ -52,6 +53,7 @@ func NewApp(o *globals.GlobalOpts) *cobra.Command {
 	rootCmd.AddCommand(NewListCmd(o))
 	rootCmd.AddCommand(NewFetchCmd(o))
 	rootCmd.AddCommand(NewDocCmd())
+	rootCmd.AddCommand(apiserver.NewCmd())
 
 	rootCmd.PersistentFlags().StringVar(&homeDir, "home-dir", homeDir,
 		"GetEnvoy home directory (location of downloaded artifacts, caches, etc)")
